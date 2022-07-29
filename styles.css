@@ -1,3 +1,88 @@
-p {
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: hotpink solid 0px;
+}
+
+html {
+    background-color: white;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    max-width: 100vw;
+    height: 5vh;
+    padding: 30px;
+    font-weight: bold;
+    font-family: Gilroy, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24252A;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 10px 10%;
+    margin-bottom: 0;
+}
+
+.nav_links li {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.name_title {
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+
+.nav_links li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    color: grey;
+}
+
+footer {
+    background-color: white;
+    padding: 0px;
+    margin-top: auto;
+    background-color: lightblue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-linkedin-square {
+    color: #0072b1;
+}
+
+.fa-github,
+.fa-envelope {
+    color: #171515
+}
+
+footer a {
+    color: grey;
+}
+
+footer i:hover {
+    color: grey;
+}
+
+footer .social_links a {
+    padding: 0 15px;
 }
