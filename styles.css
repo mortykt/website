@@ -18,19 +18,23 @@ body {
     flex-direction: column;
 }
 
+p {
+    font-family: sans-serif;
+}
+
 header {
     max-width: 100vw;
     height: 5vh;
-    padding: 30px;
+    padding-left: 20px;
     font-weight: bold;
-    font-family: Gilroy, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #24252A;
-    color: whitesmoke;
+    background-color: white;
+    color: grey;
     text-decoration: none;
-    margin: 10px 10%;
+    margin: 0 10%;
     margin-bottom: 0;
 }
 
@@ -41,29 +45,29 @@ header {
 }
 
 .name_title {
-    color: whitesmoke;
+    color: grey;
     font-size: 2.5rem;
 }
 
 
 .nav_links li a {
-    color: whitesmoke;
+    color: grey;
     text-decoration: none;
 }
 
 .nav_links li a:hover {
-    color: grey;
+    color: lightcoral;
 }
 
 footer {
-    background-color: white;
     padding: 0px;
     margin-top: auto;
-    background-color: lightblue;
-    height: 50px;
+    height: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: space-around;
 }
 
 .fa-linkedin-square {
@@ -85,4 +89,31 @@ footer i:hover {
 
 footer .social_links a {
     padding: 0 15px;
+    flex: 1;
+    margin: auto 0;
+
+}
+
+footer hr {
+    width: 150px;
+    margin: auto 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(10, 10, 10, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+    margin: auto 0;
+}
+
+.footer_text {
+    font-size: .8rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.header_divider{
+    width: 80%;
+    margin: 0 auto;
 }
