@@ -7,10 +7,7 @@
     outline: hotpink solid 0px;
 }
 
-html {
-    background-color: white;
-    height: 100%;
-}
+
 
 body {
     height: 100%;
@@ -18,40 +15,93 @@ body {
     flex-direction: column;
 }
 
-p {
-    font-family: sans-serif;
+.wrapper {
+    max-width: 80%;
+    margin: auto;
 }
 
 header {
-    max-width: 100vw;
-    height: 5vh;
-    padding-left: 20px;
-    font-weight: bold;
+    background-image: url(images/niagara2.JPG);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.nav_links {
+    max-width: 100vw;
+    height: 7vh;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    color: grey;
+    justify-content: center;
     text-decoration: none;
-    margin: 0 10%;
-    margin-bottom: 0;
+    margin: 0 20%;
+}
+.body-intro {
+    font-size: 30px;
+}
+
+.header-text {
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    text-shadow: 0px 1px 3px rgb(0 0 0 / 80%);
+    font-weight: bold;
+}
+
+.header-text p {
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.social {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.title {
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+    place-items: center;
+}
+
+.grid div {
+    background:#eee;
+    padding:1em;
+}
+
+.grid div:nth-child(odd){
+    background:#ddd;
 }
 
 .nav_links li {
     padding: 0 20px;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-
-.name_title {
-    color: grey;
-    font-size: 2.5rem;
-}
-
 
 .nav_links li a {
-    color: grey;
+    color:white;
     text-decoration: none;
 }
 
@@ -62,7 +112,7 @@ header {
 footer {
     padding: 0px;
     margin-top: auto;
-    height: 60px;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,12 +121,12 @@ footer {
 }
 
 .fa-linkedin-square {
-    color: #0072b1;
+    color: white;
 }
 
 .fa-github,
 .fa-envelope {
-    color: #171515
+    color: white
 }
 
 footer a {
@@ -113,7 +163,3 @@ footer p {
     font-style: italic;
 }
 
-.header_divider{
-    width: 80%;
-    margin: 0 auto;
-}
